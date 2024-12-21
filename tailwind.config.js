@@ -11,6 +11,9 @@ export default {
         primary: "#05B6D3",
         secondary: "#EF863E",
       },
+      backgroundImage:{
+        'signup-bg-img': "url('./src/assets/images/bg-image.png')"
+      }
     },
   },
   plugins: [],
