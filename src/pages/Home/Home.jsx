@@ -203,10 +203,10 @@ const Home = () => {
           }}
         />
 
-        <div className="flex gap-7">
+        <div className="flex flex-col md:flex-row gap-7">
           <div className="flex-1">
             {allStories?.length > 0 ? (
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 {allStories?.map((item) => {
                   return (
                     <TravelStoryCard
@@ -230,7 +230,7 @@ const Home = () => {
               />
             )}
           </div>
-          <div className="w-[350px]">
+          <div className="w-full md:w-[350px]">
             <div className="bg-white border border-slate-200 shadow-lg shadow-slate-200/60 rounded-lg">
               <div className="p-3">
                 <DayPicker
@@ -255,6 +255,13 @@ const Home = () => {
             backgroundColor: "rgba(0, 0, 0, 0.2)",
             zIndex: 999,
           },
+          content: {
+            width: "90%",
+            maxWidth: "600px",
+            margin: "0 auto",
+            padding: "20px",
+            borderRadius: "10px",
+          },
         }}
         appElement={document.getElementById("root")}
         className="model-box"
@@ -278,6 +285,13 @@ const Home = () => {
             backgroundColor: "rgba(0, 0, 0, 0.2)",
             zIndex: 999,
           },
+          content: {
+            width: "90%",
+            maxWidth: "600px",
+            margin: "0 auto",
+            padding: "20px",
+            borderRadius: "10px",
+          },
         }}
         appElement={document.getElementById("root")}
         className="model-box"
@@ -298,7 +312,7 @@ const Home = () => {
       </Modal>
 
       <button
-        className="w-16 h-16 flex items-center justify-center rounded-full bg-primary hover:bg-cyan-400 fixed right-10 bottom-10"
+        className="w-16 h-16 flex items-center justify-center rounded-full bg-primary hover:bg-cyan-400 fixed right-4 bottom-4 md:right-10 md:bottom-10"
         onClick={() => {
           setOpenAddEditModal({ isShown: true, type: "add", data: null });
         }}

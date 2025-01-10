@@ -71,3 +71,15 @@
     @apply bg-rose-50 text-rose-500 shadow-rose-100/0 border border-rose-100 hover:bg-rose-500 hover:text-white;
   }
 }
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+   
+}
