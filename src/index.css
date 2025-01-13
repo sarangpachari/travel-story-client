@@ -6,6 +6,11 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.my-bg-image{
+  background-image: url('./assets/images/bg-image.png');
+}
+
 .rdp-root {
   --rdp-accent-color: #01b0cb;
   --rdp-accent-background-color: #dffbff;
