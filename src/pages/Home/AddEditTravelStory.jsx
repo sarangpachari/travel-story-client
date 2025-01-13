@@ -36,7 +36,8 @@ const AddEditTravelStory = ({
         const imgUploadRes = await uploadImage(storyImg);
 
         //GET IMAGE URL
-        imageUrl = imgUploadRes.imageUrl || "";
+        
+        imageUrl = imgUploadRes.data.imageUrl || "";
       }
 
       const response = await axiosInstance.post("/add-travel-story", {
